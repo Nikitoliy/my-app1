@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.time-wrapper {
+    height: 135px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+
+    div:first-child {
+        background: linear-gradient(99deg,  rgba(249,195,7,1) 0%,rgba(247,7,63,1) 150%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p:first-child {
+            color: $primary;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p:last-child {
+            color: $text-color;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../../variables';
+
+.shoes-wrapper {
+    margin-bottom: 30px;
+    background-color: #fff;
+    width: 100%;
+    float: right;
+    height: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 8px 172px 1fr;
+
+    .divider {
+        width: 100%;
+        background: linear-gradient(99deg,  rgba(249,195,7,1) 0%,rgba(247,7,63,1) 150%);
+    }
+
+    .image {
+        background: url('../../assets/shoeBig.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div:first-child {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $text-color;
+            font-size: 26px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        div:last-child {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $text-color;
+        }
+    }
+
+}

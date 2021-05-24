@@ -1,0 +1,60 @@
+@import '../../variables';
+
+.shoes-small-wrapper {
+    margin-top: 20px;
+    height: 135px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+
+    button {
+        background: none;
+        border: 1px solid $primary;
+        color: $primary;
+        width: 90px;
+        height: 26px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    
+
+    div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .price-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 40px;
+
+            p:first-child {
+                color: $light-grey;
+                font-size: 14px;
+            }
+    
+            p:last-child {
+                color: $text-color;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.MuiTypography-body1 {
+    font-size: 12px !important;
+}

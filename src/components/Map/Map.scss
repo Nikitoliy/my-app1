@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.map-wrapper {
+    background-color: #fff;
+    width: 300px;
+    float: right;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .upper-line {
+        height: 7px;
+        width: 100%;
+        background: linear-gradient(99deg,  rgba(249,195,7,1) 0%,rgba(247,7,63,1) 150%);
+        align-items: left;
+        bottom: 0px;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 128px;
+
+        div:last-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: $light-grey;
+                text-align: left;
+            }
+
+            p:first-child {
+                color: $text-color;
+                font-size: 24px;
+                text-align: left;
+            }
+        }
+    }
+}

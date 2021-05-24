@@ -1,0 +1,39 @@
+p {
+  margin: 0; }
+
+.chart-wrapper {
+  height: 470px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  overflow: hidden; }
+  .chart-wrapper .progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, white 16%, white 100%); }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+    .chart-wrapper .progress-container .eboy {
+      animation: spin 5s linear 0s infinite; }
+  .chart-wrapper .graph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .chart-wrapper .graph-container .text-container .text-item {
+      width: 225px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .chart-wrapper .graph-container .text-container .text-item p:first-child {
+        color: gray; }
+      .chart-wrapper .graph-container .text-container .text-item p:last-child {
+        color: #f96e20; }
+
+/*# sourceMappingURL=Chart.css.map */
